@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+</head>
+
+<body onload="loginStatus()">
+    <h1>Products List</h1>
+
+    <div class="frame">
+        <div class="user">
+            <span class="userName"></span>
+            <button class="logout" onclick="logout()">התנתק</button>
+        </div>
+        <div class="products">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>שם המוצר</th>
+                        <th>מחיר</th>
+                        <th>הנחה</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td><input id="name" type="text" placeholder="שם המוצר" max="10"></td>
+                        <td><input id="price" type="number" placeholder="מחיר" max="10"></td>
+                        <td><input id="discount" type="number" placeholder="הנחה" maxlength="15"></td>
+                        <td><button onclick="addProduct()">ADD</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div class="loaderFrame">
+        <div class="loader"></div>
+    </div>
+
+    <div id="snackbar"></div>
+</body>
+
+</html>

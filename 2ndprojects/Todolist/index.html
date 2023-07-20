@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <h1>To-Do list</h1>
+
+    <button class="save" onclick="save()">Save</button>
+
+    <div class="tasksFrame open">
+        <h2>Open</h2>
+
+        <div class="taskList"></div>
+
+        <button class="add" onclick="addTask()">+ New task</button>
+    </div>
+
+    <div class="tasksFrame complete">
+        <h2>Complete</h2>
+
+        <div class="taskList"></div>
+    </div>
+</body>
+
+</html>

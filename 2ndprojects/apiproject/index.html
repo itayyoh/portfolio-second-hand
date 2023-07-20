@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/signup.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="c1"></div>
+    <div class="frame">
+        <div class="signUp">
+            <p>Please fill the following credentials</p> <br>
+            <label>
+                Username:
+                <input type="text" class ="userName">
+            </label>
+
+            <label>
+                Password:
+                <input type="password" class ="password">
+            </label>
+            <label>
+                Fullname:
+                <input type="text" class ="fullName">
+            </label>
+            <label>
+                Email:
+                <input type="email" class ="email">
+            </label>
+
+            <button class="btn1" onclick="signUp()" type="submit">צור משתמש</button>
+        </div>
+        <div class="loaderFrame">
+            <div class="loader"></div>
+        </div>
+    
+        <div id="snackbar"></div>
+        <div class="congrats">
+            <div class="frame">
+                <button class="btn2" onclick="goToLogin()">לעמוד ההתחברות</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
