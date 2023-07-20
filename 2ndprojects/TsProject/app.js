@@ -7,9 +7,8 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
-// Create an array of card values (pairs of letters)
 var cardValues = ["1", "2", "3", "4", "5", "6", "7", "8"];
-// Function to shuffle an array randomly
+
 function shuffleArray(array) {
     var _a;
     var shuffledArray = __spreadArray([], array, true);
@@ -19,7 +18,6 @@ function shuffleArray(array) {
     }
     return shuffledArray;
 }
-// Function to create the memory puzzle cards
 function createPuzzleCards(container) {
     var shuffledValues = shuffleArray(__spreadArray(__spreadArray([], cardValues, true), cardValues, true));
     var cards = shuffledValues.map(function (value, index) { return ({
@@ -41,25 +39,25 @@ var cards = [];
 var moves = 0;
 var timerInterval;
 var timer = 0;
-// Function to start the timer
+
 function startTimer() {
     timerInterval = setInterval(function () {
         timer++;
         updateTimerDisplay();
     }, 1000);
 }
-// Function to update the timer display
+
 function updateTimerDisplay() {
     var timerElement = document.getElementById("timer");
     if (timerElement) {
         timerElement.textContent = "Time: ".concat(timer, " seconds");
     }
 }
-// Function to stop the timer
+
 function stopTimer() {
     clearInterval(timerInterval);
 }
-// Function to handle the card click event
+
 function handleCardClick(card, cardElement) {
     if (!card.flipped) {
         card.flipped = true;
@@ -72,14 +70,14 @@ function handleCardClick(card, cardElement) {
         }
     }
 }
-// Function to update the move counter display
+
 function updateMoveCounter() {
     var moveCounterElement = document.getElementById("move-counter");
     if (moveCounterElement) {
         moveCounterElement.textContent = "Moves: ".concat(moves);
     }
 }
-// Function to check if the flipped cards match
+
 function checkMatchingCards(flippedCards) {
     if (flippedCards[0].value === flippedCards[1].value) {
         flippedCards.forEach(function (card) {
@@ -107,7 +105,7 @@ function checkMatchingCards(flippedCards) {
         }, 500);
     }
 }
-// Function to reset the game
+
 function resetGame() {
     cards.forEach(function (card) {
         card.flipped = false;
@@ -123,7 +121,6 @@ function resetGame() {
     updateTimerDisplay();
     startTimer();
 }
-// Function to initialize the game
 function initGame() {
     var container = document.getElementById("puzzle-container");
     var moveCounterElement = document.getElementById("move-counter");
@@ -137,5 +134,5 @@ function initGame() {
         startTimer();
     }
 }
-// Entry point of the application
+
 document.addEventListener("DOMContentLoaded", initGame);
