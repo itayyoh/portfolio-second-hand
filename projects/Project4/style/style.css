@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+body {
+    direction: rtl;
+}
+
+.row {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.row>* {
+    padding: 0;
+}
+
+.img {
+    background-image: url(/projects/Project4/image/Coffee.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.col-md-5 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    max-width: 350px;
+    padding: 16px;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .row {
+        position: static;
+        flex-flow: wrap-reverse;
+    }
+
+    form {
+        margin-top: 60px;
+    }
+
+    .img {
+        height: 200px;
+    }
+}
+
+button {
+    background-color: #020253;
+    width: 100px;
+    height: 35px;
+    border: 20px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Heebo', sans-serif;
+    color: #020253;
+}

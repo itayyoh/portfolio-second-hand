@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+}
+
+body {
+    background-image: linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%);
+    direction: rtl;
+    text-align: center;
+    color: white;
+    font-family: 'Satisfy', cursive;
+}
+
+h1 {
+    font-size: 5em;
+    text-shadow: 0 0 10px #00000049;
+    margin: 0;
+    font-family: 'Satisfy', cursive;
+}
+
+input {
+border: 2px solid white;
+background-color: #F6F6F624;
+display: inline-block;
+width: 250px;
+height: 25px;
+
+}
+
+button {
+    border: 8px solid white;
+    background-color: white;
+    width: 150px;
+    font-family: 'Varela Round', sans-serif;
+}

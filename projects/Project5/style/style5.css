@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+.img {
+    background-image: url(/projects/Project5/image/colorpink.png);
+    width: 100%;
+    height: 500px;
+}
+
+.frame {
+    background-color: #1A1A1AD4;
+    height: 600px;
+    width: 480px;
+    position: relative; left: 900px; top: -400px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    position: relative; bottom: -80px;
+}
+
+p {
+    color: white; font: 1em sans-serif;
+    position: relative; bottom: -50px; left: 50px;
+    font-size: 17px;
+    font-family: 'Heebo', sans-serif;
+
+
+}
+
+input {
+    border: 1px solid #D31C75;
+    width: 300px;
+    height: 30px;
+    position: absolute; left: 150px; 
+
+}
+
+#second {
+    margin-top: 50px;
+}
+
+#name {
+position: relative; top: -2px; left: 390px; 
+}
+
+#email {
+    position: relative; left: 410px;
+}
